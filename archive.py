@@ -7,4 +7,4 @@ from vaers_downloader import download
 
 from datetime import date
 
-download.downloadVAERSdata([i for i in range(2019, date.today().year)], os.getcwd())
+download.downloadVAERSdata([date.today().year], os.getcwd())
